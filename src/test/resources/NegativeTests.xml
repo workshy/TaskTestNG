@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Negative" parallel="methods" thread-count="50" verbose="10">
+    <listeners>
+        <listener class-name="listeners.ListenerClass"/>
+    </listeners>
+    <test name="Negative Tests">
+        <groups>
+            <run>
+                <include name="exception"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="testClass.TestOfArithmeticMethodsForTypeLong"></class>
+            <class name="testClass.TestOfArithmeticMethodsForTypeDouble"></class>
+            <class name="testClass.TestDifferentialAndIntegralMethods"></class>
+            <class name="testClass.TestOfTrigonometricMethods"></class>
+            <class name="testClass.TestIsPositiveAndIsNegativeMethods"></class>
+        </classes>
+    </test>
+
+</suite>
